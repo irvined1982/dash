@@ -32,8 +32,15 @@ unsigned long flashCounter;
 bool flashing;
 
 void setup(){
+  // setup Serial communication
+  Serial.begin(115200);
+  
   flashing=true;
   flashCounter=millis()+ FLASHRATE ;
+  digitalWrite(2, INPUT);
+  digitalWrite(3, INPUT);
+  attachInterrupt(0, buttonPress, CHANGE);
+  attachInterrupt(1, buttonPress, CHANGE);
 }
 
 void loop(){
