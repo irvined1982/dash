@@ -9,11 +9,11 @@
 // Array indexes of states
 #define ST_HORN  0
 #define ST_LIND  1
-#define ST_RIND 3
-#define ST_DIP 4
-#define ST_GRUP 5
-#define ST_GRDN 6
-volatile bool featureStates[7];
+#define ST_RIND 2
+#define ST_DIP 3
+#define ST_GRUP 4
+#define ST_GRDN 5
+volatile bool featureStates[6];
 
 #define DR digitalRead
 #define DW digitalWrite
