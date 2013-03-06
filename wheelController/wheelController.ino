@@ -13,7 +13,7 @@
 #define ST_DIP 4
 #define ST_GRUP 5
 #define ST_GRDN 6
-bool featureStates[7];
+volatile bool featureStates[7];
 
 #define DR digitalRead
 #define DW digitalWrite
